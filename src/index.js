@@ -1,13 +1,14 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import ReactDom from "react-dom";
 
-import App from "./App";
+const App = () => {
+  return (
+    // React.Fragment
+    <>
+      <h1>Hello!</h1>
+      <p>How are you</p>
+    </>
+  );
+};
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+// ReactDom.render(<App />, document.getElementById("root"));
+createRoot.render(<App />, document.getElementById("root"));
