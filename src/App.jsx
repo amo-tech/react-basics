@@ -1,10 +1,18 @@
 import React from "react";
 
 const App = () => {
+    const onClickButton = () => {
+      alert();
+    }
+    const contentStyle = {
+      color: "blue",
+      fontSize: "18px",
+    }
     return (
         <>
-      <h1>Hello!</h1>
-      <p>How are you</p>
+      <h1 style={{ color: "blue" }}>Hello!</h1>
+      <p style={contentStyle}>How are you</p>
+      <button onClick = {onClickButton}>Button</button>
     </>
     );
 };

@@ -3,4 +3,4 @@ import App from "./App";
 
 
 ReactDom.render(<App />, document.getElementById("root"));
-// createRoot.render(<App />, document.getElementById("root"));
+// ReactDom.createRoot.render(<App />, document.getElementById("root"));
